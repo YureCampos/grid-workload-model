@@ -1,0 +1,38 @@
+"0",""
+"0","dados_carga <- read_table2(here::here(params$arquivo_dados), col_names = TRUE)"
+"1","
+[36m--[39m [1m[1mColumn specification[1m[22m [36m----------------------------------------------------------------[39m
+cols(
+  Param1 = [32mcol_double()[39m,
+  Param2 = [32mcol_double()[39m,
+  Cluster = [32mcol_double()[39m,
+  distribution = [31mcol_character()[39m,
+  k = [32mcol_double()[39m,
+  Trace = [31mcol_character()[39m,
+  stats.attr = [31mcol_character()[39m,
+  Size = [32mcol_double()[39m,
+  Fraction = [32mcol_double()[39m
+)
+
+"
+"0","glimpse(dados_carga)"
+"1","Rows: 3,703"
+"1",""
+"1","
+"
+"1","Columns: 9"
+"1",""
+"1","
+"
+"1","$ Param1       [3m[38;5;246m<dbl>[39m[23m 0.10289224, 0.12048073, 0.08654514, 21.00408013, 18.09264515, 19.~
+$ Param2       [3m[38;5;246m<dbl>[39m[23m NA, NA, NA, 2.0030023, 1.8854113, 1.9410952, 1.1002134, 1.5573828~
+$ Cluster      [3m[38;5;246m<dbl>[39m[23m 8, 9, 10, 2, 3, 4, 5, 6, 1, 7, 9, 10, 2, 3, 4, 5, 6, 7, 1, 8, 11,~
+$ distribution [3m[38;5;246m<chr>[39m[23m ""exponential"", ""exponential"", ""exponential"", ""gamma"", ""gamma"", ""g~
+$ k            [3m[38;5;246m<dbl>[39m[23m 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 1~
+$ Trace        [3m[38;5;246m<chr>[39m[23m ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-~
+$ stats.attr   [3m[38;5;246m<chr>[39m[23m ""bot_user_iat"", ""bot_user_iat"", ""bot_user_iat"", ""bot_user_iat"", ""~
+$ Size         [3m[38;5;246m<dbl>[39m[23m 2, 1, 1, 17, 41, 30, 4, 1, 76, 1, 2, 1, 4, 41, 30, 13, 4, 1, 76, ~
+$ Fraction     [3m[38;5;246m<dbl>[39m[23m 0.011494253, 0.005747126, 0.005747126, 0.097701149, 0.235632184, ~"
+"1",""
+"1","
+"

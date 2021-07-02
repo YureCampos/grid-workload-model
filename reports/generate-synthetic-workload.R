@@ -32,8 +32,8 @@ GenerateWorkload <- function(file.dists="./wl_fitdist_best.txt", k=5, sites.per.
                              users.per.site=200, duration.secs=3600*24*30, rt.max=365*24, 
                              reduced.wl=FALSE, transform.f=function(x) 2^x) {
   require(foreach)
-  require(doMC)
-  registerDoMC()
+  #require(doMC)
+  #registerDoMC()
                            
   dists.rfun <- list(normal=rnorm, lognormal=rlnorm, gamma=rgamma, exponential=rexp, 
                      weibull=rweibull)

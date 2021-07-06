@@ -1,0 +1,4 @@
+"0","dados_carga_dist %>%"
+"0","  ggplot(mapping = aes(y = gof, x = k, color = distribution )) +"
+"0","  facet_grid(stats.attr ~ Trace) + "
+"0","  geom_line()"

@@ -16,12 +16,19 @@
 # by running the function "GenerateBoTInfoFromGWA(...)" before starting the extraction process.
 # Each trace is represented by the tuple: c(Trace ID, GWA-format trace file).
 ##
-kTraces <- list(c("gwa-t1", "/local/marcus/workloads/gwa-t1/anon_jobs.gwf_jid.txt"),
-                c("gwa-t2", "/local/marcus/workloads/gwa-t2/grid5000_clean_trace.log_jid.txt"),
-                c("gwa-t3", "/local/marcus/workloads/gwa-t3/anon_jobs.gwf_jid.txt"),
-                c("gwa-t4", "/local/marcus/workloads/gwa-t4/anon_jobs.gwf_jid.txt"),
-                c("gwa-t10", "/local/marcus/workloads/gwa-t10/anon_jobs.gwf_jid.txt"),
-                c("gwa-t11", "/local/marcus/workloads/gwa-t11/anon_jobs.gwf_jid.txt"))
+#kTraces <- list(c("gwa-t1", "/local/marcus/workloads/gwa-t1/anon_jobs.gwf_jid.txt"),
+#                c("gwa-t2", "/local/marcus/workloads/gwa-t2/grid5000_clean_trace.log_jid.txt"),
+#                c("gwa-t3", "/local/marcus/workloads/gwa-t3/anon_jobs.gwf_jid.txt"),
+#                c("gwa-t4", "/local/marcus/workloads/gwa-t4/anon_jobs.gwf_jid.txt"),
+#                c("gwa-t10", "/local/marcus/workloads/gwa-t10/anon_jobs.gwf_jid.txt"),
+#                c("gwa-t11", "/local/marcus/workloads/gwa-t11/anon_jobs.gwf_jid.txt"))
+
+kTraces <- list(c("gwa-t1", "data/gwa-traces-with-botid/gwa-t1/anon_jobs.gwf_jid.txt"),
+                c("gwa-t2", "data/gwa-traces-with-botid/gwa-t2/anon_jobs.gwf_jid.txt"),
+                c("gwa-t3", "data/gwa-traces-with-botid/gwa-t3/anon_jobs.gwf_jid.txt"),
+                c("gwa-t4", "data/gwa-traces-with-botid/gwa-t4/anon_jobs.gwf_jid.txt"),
+                c("gwa-t10", "data/gwa-traces-with-botid/gwa-t10/anon_jobs.gwf_jid.txt"),
+                c("gwa-t11", "data/gwa-traces-with-botid/gwa-t11/anon_jobs.gwf_jid.txt"))
 
 
 ##

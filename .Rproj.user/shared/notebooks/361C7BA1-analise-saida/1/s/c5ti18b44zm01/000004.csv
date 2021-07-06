@@ -1,0 +1,38 @@
+"0",""
+"0","carga_trabalho_sintetica_gwa_t1 <- read_table2(here::here(params$arquivo_dados_saida_1), col_names = TRUE)"
+"1","
+[36m--[39m [1m[1mColumn specification[1m[22m [36m-----------------------------------------------------------------------[39m
+cols(
+  SubmitTime = [32mcol_double()[39m,
+  RunTime = [32mcol_double()[39m,
+  JobID = [32mcol_double()[39m,
+  UserID = [31mcol_character()[39m,
+  PeerID = [31mcol_character()[39m,
+  TraceID = [31mcol_character()[39m,
+  Cluster.IAT = [31mcol_character()[39m,
+  Cluster.JRT = [31mcol_character()[39m,
+  Cluster.TRT = [31mcol_character()[39m
+)
+
+"
+"0","glimpse(carga_trabalho_sintetica_gwa_t1)"
+"1","Rows: 1,753,052"
+"1",""
+"1","
+"
+"1","Columns: 9"
+"1",""
+"1","
+"
+"1","$ SubmitTime  [3m[38;5;246m<dbl>[39m[23m 870, 870, 870, 870, 870, 870, 870, 870, 8552, 8637, 13949, 13949, 13949, ~
+$ RunTime     [3m[38;5;246m<dbl>[39m[23m 5, 39, 88, 308, 5, 3, 76, 46, 5, 34, 6, 11, 12, 14, 23, 81, 19, 7, 4, 13,~
+$ JobID       [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 4, 4, 4, 4, 5, 6, 6, 6, 6, 7, 8, 8, 8, 9~
+$ UserID      [3m[38;5;246m<chr>[39m[23m ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""U1"", ""~
+$ PeerID      [3m[38;5;246m<chr>[39m[23m ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""P1"", ""~
+$ TraceID     [3m[38;5;246m<chr>[39m[23m ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gw~
+$ Cluster.IAT [3m[38;5;246m<chr>[39m[23m ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""C2"", ""~
+$ Cluster.JRT [3m[38;5;246m<chr>[39m[23m ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""~
+$ Cluster.TRT [3m[38;5;246m<chr>[39m[23m ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""C1"", ""~"
+"1",""
+"1","
+"

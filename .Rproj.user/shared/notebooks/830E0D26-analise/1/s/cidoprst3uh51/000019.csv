@@ -1,0 +1,5 @@
+"0","dados_carga %>%"
+"0","  ggplot(aes(x = k, y = Fraction, color = distribution)) +"
+"0","  geom_point(alpha = .6) +"
+"0","#  facet_wrap(Trace ~ ., scales = ""free_y"") +"
+"0","  facet_grid(stats.attr ~ Trace, scales = ""free_y"")"

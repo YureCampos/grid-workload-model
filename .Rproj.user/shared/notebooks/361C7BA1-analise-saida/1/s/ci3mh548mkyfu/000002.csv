@@ -1,0 +1,9 @@
+"0","dados_saida %>%"
+"0","  ggplot(aes(x = k, y = Fraction, color = distribution)) +"
+"0","  geom_jitter(height = .1, alpha = .6) +"
+"0","  facet_wrap(Trace ~ ., scales = ""free_y"")"
+"2","Error: At least one layer must contain all faceting variables: `Trace`.
+* Plot is missing `Trace`
+* Layer 1 is missing `Trace`
+[90mRun `rlang::last_error()` to see where the error occurred.[39m
+"

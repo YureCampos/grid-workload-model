@@ -1,0 +1,26 @@
+{
+    "id": "3215D0A7",
+    "path": "E:/Google Drive/Mestre Yure/GitHub/YureCampos/grid-workload-model/reports/generate-synthetic-workload.R",
+    "project_path": "reports/generate-synthetic-workload.R",
+    "type": "r_source",
+    "hash": "2585605035",
+    "contents": "",
+    "dirty": false,
+    "created": 1625573573422.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "62,77",
+        "scrollLine": "36"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1625164820,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1625164820,
+    "read_only": false,
+    "read_only_alternatives": []
+}

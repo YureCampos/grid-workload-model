@@ -1,0 +1,47 @@
+---
+title: "Análise da replicação de Carvalho et al. 2012 - dados de saída"
+output:
+    html_document:
+    df_print: paged
+    code_folding: hide
+theme: sandstone
+params: 
+    arquivo_dados_saida_1: "results/20210629/workload_clust_1spt_200ups_gwa-t1.txt"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+library(ggbeeswarm)
+library(gridExtra)
+theme_set(theme_bw())
+
+knitr::opts_chunk$set(tidy = FALSE,
+                      fig.width = 6,
+                      fig.height = 5)
+
+```
+
+## Arquivo de dados de saída
+
+arquivo: results/20210629/workload_clust_1spt_200ups_gwa-t1.txt
+
+Tabela com dados de saída 1
+
+```{r}
+
+carga_trabalho_sintetica_gwa_t1 <- read_table2(here::here(params$arquivo_dados_saida_1), col_names = TRUE)
+
+glimpse(carga_trabalho_sintetica_gwa_t1)
+
+```
+
+```{r}
+carga_trabalho_sintetica_gwa_t1 %>%
+  ggplot(aes(x = Cluster.IAT, y = UserID, color = Cluster.IAT)) +
+  geom_jitter(height = .1, alpha = .6) +
+  facet_wrap(Trace ~ ., scales = "free_y")
+#  facet_grid(Trace ~ ., scales = "free_y")
+  
+```
+

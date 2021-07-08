@@ -10,6 +10,9 @@
 #
 #################################################################################################
 
+library(foreach)
+vignette("nested")
+
 ##
 # List of traces that will be used in extraction of workload models. The traces must contain
 # the Bag-of-Task (BoT) ID in the field JobStructureParams. One can generate this information
@@ -71,8 +74,8 @@ GenerateWorkloadModels <- function(k.values=1:20,
                                                    "task_runtime"), 
                                    traces.list=kTraces, cldist.file="", do.log=FALSE) {
   require(foreach)
-  require(doMC)
-  registerDoMC()
+  require(doMC)  #biblioteca somente disponível em Linux
+  registerDoMC() #biblioteca somente disponível em Linux 
   
   foreach(attribute=wl.attributes, .combine=rbind) %do% {
     foreach(trace=traces.list, .combine=rbind) %do% {

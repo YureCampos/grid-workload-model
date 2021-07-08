@@ -79,7 +79,16 @@ glimpse(dados_modelo_carga_labels)
 dados_modelo_carga_labels %>%
   ggplot(mapping = aes(y = ratio, x = k, color = distribution )) +
   facet_grid(atributos_carga ~ Trace_label) + 
-  geom_line()
+  geom_line() +
+#  ylab("Group Goodeness-of-Fit (GGoF)") +
+  theme(plot.title=element_text(hjust=0.5), text=element_text(size=12)) +
+  theme_update(legend.position = "top") +
+  labs(
+    color = "Distribuição de Probabilidade",
+    x = "k (número de clusters)",
+    y = "Group Goodeness-of-Fit (GGoF)",
+    caption = "Figura 2: Resultados do GGoF para diferentes cenários de ajuste."
+  )
 
-
+ggsave("figura2.png", width=8, height = 5, dpi=600)
 ```

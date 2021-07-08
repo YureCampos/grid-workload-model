@@ -1,0 +1,19 @@
+"0","dados_modelo_carga_labels = dados_modelo_carga"
+"0",""
+"0","glimpse(dados_modelo_carga_labels)"
+"1","Rows: 2,120"
+"1",""
+"1","
+"
+"1","Columns: 5"
+"1",""
+"1","
+"
+"1","$ distribution [3m[38;5;246m<chr>[39m[23m ""combined"", ""exponential"", ""gamma"", ""lognormal"", ""normal"", ""weibull"", ""combined"", ""expone~
+$ k            [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5,~
+$ Trace        [3m[38;5;246m<chr>[39m[23m ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"", ""gwa-t1"",~
+$ stats.attr   [3m[38;5;246m<chr>[39m[23m ""bot_user_iat"", ""bot_user_iat"", ""bot_user_iat"", ""bot_user_iat"", ""bot_user_iat"", ""bot_user~
+$ ratio        [3m[38;5;246m<dbl>[39m[23m 0.7356322, 0.0000000, 0.6839080, 0.7356322, 0.5747126, 0.4827586, 0.9195402, 0.0000000, 0~"
+"1",""
+"1","
+"

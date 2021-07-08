@@ -1,0 +1,4 @@
+"0","dados_modelo_carga_labels %>%"
+"0","  ggplot(mapping = aes(y = ratio, x = k, color = distribution )) +"
+"0","  facet_grid(atributos_carga ~ Trace_label) + "
+"0","  geom_line()"

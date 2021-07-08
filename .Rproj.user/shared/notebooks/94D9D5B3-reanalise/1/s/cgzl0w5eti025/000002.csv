@@ -1,0 +1,4 @@
+"0","dados_modelo_carga %>%"
+"0","  ggplot(mapping = aes(y = ratio, x = k, color = distribution )) +"
+"0","  facet_grid(stats.attr ~ Trace) + "
+"0","  geom_line()"

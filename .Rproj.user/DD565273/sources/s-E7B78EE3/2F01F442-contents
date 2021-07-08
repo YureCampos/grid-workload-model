@@ -23,50 +23,10 @@ knitr::opts_chunk$set(tidy = FALSE,
 
 ```
 
-## Entrada de dados 
-The input file containing the probability distributions and parameters for each group of users needed for generating the workload is available at:
+## Análise do arquivo com o modelo de carga de trabalho
+arquivo: wl_fitdist_all.txt
 
-arquivo: wl_fitdist_best.txt
-
-Tabela com dados de carga com distribuições de probabilidade
-
-```{r}
-
-dados_carga <- read_table2(here::here(params$arquivo_dados), col_names = TRUE)
-
-glimpse(dados_carga)
-
-```
-```{r}
-dados_carga_dist = dados_carga %>% 
-    group_by(k, distribution, Trace, stats.attr) %>% 
-    summarize(gof = sum(Fraction)) 
-```
-```{r}
-dados_carga_dist %>%
-  ggplot(mapping = aes(y = gof, x = k, color = distribution )) +
-  facet_grid(stats.attr ~ Trace) + 
-  geom_line()
-```
-
-
-
-```{r}
-dados_carga %>%
-  ggplot(aes(x = k, y = Fraction, color = distribution)) +
-  geom_point(alpha = .6) +
-#  facet_wrap(Trace ~ ., scales = "free_y") +
-  facet_grid(stats.attr ~ Trace, scales = "free_y")
-#  facet_grid(Trace ~ ., scales = "free_y")
-  
-```
-
-## Entrada de dados 
-The input file containing the probability distributions and parameters for each group of users needed for generating the workload is available at:
-
-arquivo: wl_fitdist_best.txt
-
-Tabela com dados de carga com distribuições de probabilidade
+Tabela com resultados para a avaliação do modelo proposto
 
 ```{r}
 
@@ -83,13 +43,16 @@ dados_modelo_carga %>%
   geom_line()
 ```
 
+## Análise do arquivo com o modelo de carga de trabalho
+arquivo: wl_fitdist_all.txt
+
+Tabela com resultados para a avaliação do modelo proposto
+
+Os labels foram ajustados
+
 ```{r}
 dados_modelo_carga_labels = dados_modelo_carga
 
-glimpse(dados_modelo_carga_labels)
-```
-
-```{r}
 dados_modelo_carga_labels <- dados_modelo_carga_labels %>%
     mutate(Trace_label = case_when(
       Trace == "gwa-t1" ~ "GS1",
@@ -108,6 +71,8 @@ dados_modelo_carga_labels <- dados_modelo_carga_labels %>%
       stats.attr == "task_runtime" ~ "TET"
       )
     )
+
+glimpse(dados_modelo_carga_labels)
 ```
 
 ```{r}
@@ -115,4 +80,6 @@ dados_modelo_carga_labels %>%
   ggplot(mapping = aes(y = ratio, x = k, color = distribution )) +
   facet_grid(atributos_carga ~ Trace_label) + 
   geom_line()
+
+
 ```
